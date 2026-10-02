@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern, responsive calculator built with HTML, CSS, and JavaScript." />
+  <title>CodeAlpha Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator-container">
+    <header class="calculator-header">
+      <div>
+        <p class="eyebrow">CODEALPHA PROJECT</p>
+        <h1>Calculator</h1>
+      </div>
+      <span class="calculator-icon" aria-hidden="true">⌗</span>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div class="previous-operand" id="previous-operand"></div>
+        <div class="current-operand" id="current-operand">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear" type="button">AC</button>
+        <button class="key utility" data-action="delete" type="button" aria-label="Delete last digit">DEL</button>
+        <button class="key utility" data-action="percent" type="button">%</button>
+        <button class="key operator" data-operator="/" type="button" aria-label="Divide">÷</button>
+
+        <button class="key" data-number="7" type="button">7</button>
+        <button class="key" data-number="8" type="button">8</button>
+        <button class="key" data-number="9" type="button">9</button>
+        <button class="key operator" data-operator="*" type="button" aria-label="Multiply">×</button>
+
+        <button class="key" data-number="4" type="button">4</button>
+        <button class="key" data-number="5" type="button">5</button>
+        <button class="key" data-number="6" type="button">6</button>
+        <button class="key operator" data-operator="-" type="button" aria-label="Subtract">−</button>
+
+        <button class="key" data-number="1" type="button">1</button>
+        <button class="key" data-number="2" type="button">2</button>
+        <button class="key" data-number="3" type="button">3</button>
+        <button class="key operator" data-operator="+" type="button" aria-label="Add">+</button>
+
+        <button class="key utility sign" data-action="sign" type="button">±</button>
+        <button class="key" data-number="0" type="button">0</button>
+        <button class="key" data-action="decimal" type="button">.</button>
+        <button class="key equals" data-action="equals" type="button" aria-label="Equals">=</button>
+      </div>
+    </section>
+
+    <p class="keyboard-hint">
+      Keyboard supported · Press Esc to clear
+    </p>
+  </main>
+</body>
+</html>
